@@ -521,17 +521,19 @@ h1 {
   }
 
   @media (max-width: 768px) {
-    #musicName {
-        font-size: 10px;   
+    .player {
+        width: 60%;
     }
-    
+    #musicName {
+        font-size: 20px;   
+    }
     .controls i {
-        font-size: 25px;
+        font-size: 45px;
     }
     .time span {
-        font-size: 10px;
+        font-size: 15px;
     }
     .progress {
-        height: 2px;
+        height: 4px;
     }
   }
