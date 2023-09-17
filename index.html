@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>acervoband</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer type="module" src="script.js"></script>
 </head>
 <body>
     <header>
@@ -52,6 +52,31 @@
 
         </nav>               
     </header>    
+
+          <!--MUSICPLAY-->
+    <section class="mscplay">
+          <div class="player">
+
+            <span id="musicName"></span>
+            
+            <audio id="player" src=""></audio>
+            <div class="controls">
+              <button id="prevButton"><i class='bx bx-skip-previous'></i></button>
+              <button id="playPauseButton"><i class='bx bx-caret-right'></i></button>
+              <button id="nextButton"><i class='bx bx-skip-next'></i></button>
+            </div>
+            <div class="footer">
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+              <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+          </div>
+    </section>
+
     <!--EVENTOS-->
     <main class="nxtevnts">
         <section class="nextevents">
@@ -133,6 +158,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpgk.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </body>
 </html>
